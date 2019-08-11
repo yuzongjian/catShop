@@ -1,9 +1,6 @@
 package com.imooc.miaosha.dao;
 
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import com.imooc.miaosha.domain.User;
 
@@ -15,5 +12,8 @@ public interface UserDao {
 
 	@Insert("insert into user(id, name)values(#{id}, #{name})")
 	public int insert(User user);
+//
+//	@Update("update user(id, name)values(#{id}, #{name})")
+//	public void update(User user);
 	
 }

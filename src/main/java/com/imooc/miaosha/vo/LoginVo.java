@@ -13,19 +13,9 @@ public class LoginVo {
 	private String mobile;
 	
 	@NotNull
+	@Length(min=32)
 	private String password;
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
-    @NotNull
-
-	private int score;
+	
 	public String getMobile() {
 		return mobile;
 	}
@@ -40,6 +30,6 @@ public class LoginVo {
 	}
 	@Override
 	public String toString() {
-		return "LoginVo [mobile=" + mobile + ", password=" + password + ", score=\" + score + \"]";
+		return "LoginVo [mobile=" + mobile + ", password=" + password + "]";
 	}
 }

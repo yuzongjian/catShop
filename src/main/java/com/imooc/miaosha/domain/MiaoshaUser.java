@@ -10,7 +10,7 @@ public class MiaoshaUser {
 	private String head;
 	private Date registerDate;
 	private Date lastLoginDate;
-	private Integer score;
+	private Integer loginCount;
 	public Long getId() {
 		return id;
 	}
@@ -53,10 +53,10 @@ public class MiaoshaUser {
 	public void setLastLoginDate(Date lastLoginDate) {
 		this.lastLoginDate = lastLoginDate;
 	}
-	public Integer getScore() {
-		return score;
+	public Integer getLoginCount() {
+		return loginCount;
 	}
-	public void setScore(Integer score) {
-		this.score = score;
+	public void setLoginCount(Integer loginCount) {
+		this.loginCount = loginCount;
 	}
 }
